@@ -1,0 +1,18 @@
+.term-sftp-box .sftp-wrap {
+  display: flex !important;
+  flex-direction: row;
+}
+
+.term-sftp-box .sftp-section {
+  flex: 1;
+  position: static;
+}
+
+/* Optionally, if you want to adjust the inner layout */
+.sftp-remote-section {
+  order: 1 !important;
+}
+
+.sftp-local-section {
+  order: 2;
+}
