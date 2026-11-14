@@ -5,6 +5,8 @@
   "description": "Put the remote files on the left and the local files on the right in the SFTP panel.",
   "main": "main.js",
   "license": "MIT",
+  "author": "ZHAO Xudong",
+  "homepage": "https://github.com/electerm/electerm-widget-swap-sftp-panes",
   "scripts": {
     "test": "node --test test/*.test.js"
   },
