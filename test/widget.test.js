@@ -29,3 +29,9 @@ test('it is an auto-runnable instance widget with one switch', () => {
 test('the stylesheet is the wiki text, not a paraphrase', () => {
   assert.strictEqual(css.trim(), ".term-sftp-box .sftp-wrap {\n  display: flex !important;\n  flex-direction: row;\n}\n\n.term-sftp-box .sftp-section {\n  flex: 1;\n  position: static;\n}\n\n/* Optionally, if you want to adjust the inner layout */\n.sftp-remote-section {\n  order: 1 !important;\n}\n\n.sftp-local-section {\n  order: 2;\n}")
 })
+
+test('it is a manifest-only widget: no server script at all', () => {
+  assert.strictEqual(pkg.main, undefined)
+  assert.deepStrictEqual(pkg.electerm.styles, ['style.css'])
+  assert.strictEqual(fs.existsSync(path.join(ROOT, 'main.js')), false)
+})
