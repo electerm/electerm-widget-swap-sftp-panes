@@ -1,6 +1,6 @@
 {
   "name": "swap-sftp-panes",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "description": "Put the remote files on the left and the local files on the right in the SFTP panel.",
   "license": "MIT",
@@ -13,11 +13,13 @@
     "id": "swap-sftp-panes",
     "name": "Swap SFTP Panes",
     "description": "Put the remote files on the left and the local files on the right in the SFTP panel.",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "type": "instance",
     "singleInstance": true,
     "persist": true,
-    "styles": ["style.css"],
+    "styles": [
+      "style.css"
+    ],
     "configs": [
       {
         "name": "autoRun",
@@ -26,6 +28,18 @@
         "default": true,
         "description": "Re-apply on every launch. This is the switch that puts the widget in electerm's auto-run list."
       }
-    ]
+    ],
+    "i18n": {
+      "zh_cn": {
+        "name": "交换 SFTP 面板",
+        "description": "在 SFTP 面板中把远程文件放在左侧、本地文件放在右侧。",
+        "configs": {
+          "autoRun": {
+            "label": "启动时生效",
+            "description": "每次启动都重新应用。这个开关会把 widget 加入 electerm 的自动运行列表。"
+          }
+        }
+      }
+    }
   }
 }
